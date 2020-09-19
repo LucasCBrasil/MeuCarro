@@ -1,0 +1,34 @@
+{
+  "carros": [
+    {
+      "id": 1,
+      "imagem": "",
+      "cor": "preto",
+      "marca": "Ford",
+      "modelo": "Ka",
+      "ano": "2017",
+      "km": "12000",
+      "preco": "14500"
+    },
+    {
+      "id": 2,
+      "imagem": "",
+      "cor": "preto",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "ano": "2020",
+      "km": "0",
+      "preco": "97540"
+    },
+    {
+      "id": 3,
+      "imagem": "",
+      "cor": "branco",
+      "marca": "Fiat",
+      "modelo": "Uno",
+      "ano": "2015",
+      "km": "45000",
+      "preco": "10350"
+    }
+  ]
+}
