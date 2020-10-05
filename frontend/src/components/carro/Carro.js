@@ -14,11 +14,11 @@ function Carro(props) {
                 <input type="text" disabled value={props.marca + " " + props.modelo + " - " + props.ano}  />
               </div>
               <div>
-                <input type="text" disabled value={"Preço: " + props.preco}/>
+                <input type="text" disabled value={"Preço: R$ " + props.preco}/>
               </div>
-                <button title="Detalhes" type="button">
-                  Detalhes
-                </button>
+                  <button title="Detalhes" type="button" >
+                    Detalhes
+                  </button>
                 <p>
                   <input type="checkbox" defaultChecked={check} onChange={change}/>
                   {check && <span>Adicionado aos favoritos</span> || <span>Favoritar</span>}
@@ -31,3 +31,4 @@ function Carro(props) {
 }
 
 export default Carro;
+
