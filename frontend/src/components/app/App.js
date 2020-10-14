@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import ListaCarros from '../list/ListagemCarros';
+import Routes from './Routes';
 
 function App() {
   return (
     <div>
-        <Header></Header>
-        <ListaCarros></ListaCarros>
+        <Header/>
+        <Routes/>
     </div>
   );
 }

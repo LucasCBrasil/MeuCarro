@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Carro(props) {
+function Carro(carro) {
   const [check, setCheck] = useState(false)
   const change = () => setCheck(!check)
 
@@ -9,12 +9,12 @@ function Carro(props) {
         <div>
           <fieldset>
             <div>
-              <img src={props.imagem} width="400" height="200"/>
+              <img src={carro.imagem} width="400" height="200"/>
               <div>
-                <input type="text" disabled value={props.marca + " " + props.modelo + " - " + props.ano}  />
+                <input type="text" disabled value={carro.marca + " " + carro.modelo + " - " + carro.ano}  />
               </div>
               <div>
-                <input type="text" disabled value={"Preço: R$ " + props.preco}/>
+                <input type="text" disabled value={"Preço: R$ " + carro.preco}/>
               </div>
                   <button title="Detalhes" type="button" >
                     Detalhes
