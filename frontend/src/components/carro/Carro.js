@@ -9,7 +9,6 @@ function Carro(carro) {
         <div>
           <fieldset>
             <div>
-              <img src={carro.imagem} width="400" height="200"/>
               <div>
                 <input type="text" disabled value={carro.marca + " " + carro.modelo + " - " + carro.ano}  />
               </div>
