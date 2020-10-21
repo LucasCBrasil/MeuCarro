@@ -10,10 +10,10 @@ function Carro(carro) {
           <fieldset>
             <div>
               <div>
-                <input type="text" disabled value={carro.marca + " " + carro.modelo + " - " + carro.ano}  />
+                <input id="name" type="text" disabled value={carro.carro.marca + " " + carro.carro.modelo + " - " + carro.carro.ano}  />
               </div>
               <div>
-                <input type="text" disabled value={"Preço: R$ " + carro.preco}/>
+                <input id="price" type="text" disabled value={"Preço: R$ " + carro.carro.preco}/>
               </div>
                   <button title="Detalhes" type="button" >
                     Detalhes

@@ -18,20 +18,20 @@ afterEach(() => {
 });
 
 it("renders car data", async () => {
-    const fakeCar = {
+    const carro = {
         marca: "Ford",
         modelo: "New Fiesta",
         ano: "2019",
         preco: "24399",
     };
     await act(async () => {
-        render(<Carro carro={fakeCar}/>, container);
+        render(<Carro carro={carro}/>, container);
     })
 
-    expect(container.textContent).toContain(fakeCar.marca)
-    expect(container.textContent).toContain(fakeCar.modelo)
-    expect(container.textContent).toContain(fakeCar.ano)
-    expect(container.textContent).toContain(fakeCar.preco)
+    expect(container.querySelector("[id='name']").textContent).toContain(carro.marca)
+    expect(container.textContent).querySelector("[id='name']").toContain(carro.modelo)
+    expect(container.textContent).querySelector("[id='name']").toContain(carro.ano)
+    expect(container.textContent).querySelector("[id='price']").toContain(carro.preco)
 
     global.fetch.mockRestore();
 })
