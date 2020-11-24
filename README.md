@@ -18,8 +18,4 @@ Segunda Tela:
 -É possível colocar um carro à venda, passando todas as informações necessárias para descrever o mesmo.
 
 Terceira Tela:
-
--Para cadastrar um carro no sistema, será possível o cadastro de perfis de usuário, em uma tela acessada a partir da tela principal da aplicação.
-
-Quarta Tela:
 -Será possível visualizar mais detalhes sobre o carro listado, como data de emplacamento, tipo de câmbio, tipos de vidro(elétrico ou manual), tecido dos bancos do carro, computador de bordo.
