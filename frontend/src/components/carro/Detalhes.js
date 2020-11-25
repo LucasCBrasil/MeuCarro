@@ -1,40 +1,49 @@
-import React, { useState } from 'react';
-import Header from '../app/Header';
+import React, { useState, useEffect } from 'react';
+import { urlGetCarro, getRequestInit} from '../../utils/request';
 
 function Detalhes(props) {
 
-    const [check, setCheck] = useState(false)
-    const change = () => setCheck(!check)
+    const [carro, setCarro] = useState(0);
+
+    useEffect(() => {
+        fetch(urlGetCarro.replace('{id}', props.match.params.id), getRequestInit)
+            .then(res => res.json())    
+            .then(response => {
+                setCarro(response);
+            })
+            .catch(error => console.log(error))
+    }, []);
 
     return(
-        <div>
-            <Header></Header>
-            <img src={props.imagem} width="400" height="200"/>
-            <div>
-                <input type="text" disabled value={props.marca + " " + props.modelo + " - " + props.ano}  />
+        <div className="detailsList">
+            <div className="gridItem">
+                <img className="carImage" src={carro.imagem}/>
             </div>
-            <div>
-                <input type="text" disabled value={"Preço: " + props.preco}/>
+            <div className="gridItem">
+                <div>
+                    <input className="carName" type="text" disabled value={carro.marca + " " + carro.modelo + " - " + carro.ano}  />
+                </div>
             </div>
-            <div>
-                <input type="text" disabled value={"Data de Emplacamento:" + props.emplacamento}/>
+            <div className="gridItem">
+                <div>
+                    <input className="input" type="text" disabled value={"Preço: " + carro.preco}/>
+                </div>
+                <div>
+                    <input className="input" type="text" disabled value={"Data de Emplacamento: " + carro.emplacamento}/>
+                </div>
+                <div>
+                    <input className="input" type="text" disabled value={"Câmbio: " + carro.cambio}/>
+                </div>
+                <div>
+                    <input className="input" type="text" disabled value={"Vidros: " + carro.vidros}/>
+                </div>
+                <div>
+                    <input  className="input" type="text" disabled value={"Tecido dos Bancos: " + carro.tecido_bancos}/>
+                </div>
+                <div>
+                    <input className="input" type="text" disabled value={"Computador de Bordo: " + carro.computador_bordo}/>
+                </div>
             </div>
-            <div>
-                <input type="text" disabled value={"Câmbio:" + props.cambio}/>
-            </div>
-            <div>
-                <input type="text" disabled value={"Vidros:" + props.vidros}/>
-            </div>
-            <div>
-                <input type="text" disabled value={"Tecido dos Bancos:" + props.tecido_bancos}/>
-            </div>
-            <div>
-                <input type="text" disabled value={"Computador de Bordo:" + props.computador_bordo}/>
-            </div>
-            <p>
-                <input type="checkbox" defaultChecked={props.check} onChange={change}/>
-                {check && <span>Adicionado aos favoritos</span> || <span>Favoritar</span>}
-            </p>
         </div>
     )
 }

@@ -1,5 +1,16 @@
 var carros = require('../db.json');
 
-exports.getCarros = function(req,res,next) {
+exports.get_carros = function(req,res,next) {
     res.json(carros);
+}
+
+exports.get_carro = function (req, res) {
+    let id = req.params.id;
+    carForId={}
+    carros.forEach(carro => {
+      if(carro.id==id){
+        carForId=carro;
+      }
+    });
+    res.json(carForId);
 }

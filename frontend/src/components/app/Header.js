@@ -7,9 +7,17 @@ function Header() {
             <title>MeuCarro - O lugar ideal para encontrar seu próximo carro</title>
             <div class="topnav">
                 <div>
-                    <b>MeuCarro</b>
+                    <button>
+                        <a href="/" class="homeButton">MeuCarro</a>
+                    </button>
                 </div> 
-                <a className="login">Login</a>
+            </div>
+            <div class="right">
+                <div>
+                    <button>
+                        <a href="/carro" class="carButton">Cadastrar Carro</a>
+                    </button>
+                </div>
             </div>
         </div> 
     )

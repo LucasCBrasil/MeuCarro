@@ -41,7 +41,61 @@
   display:grid; 
   grid-column-gap: 30px; 
   grid-row-gap: 30px; 
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+}
+
+.image {
+  width: 370px;
+  height: 270px;
+}
+
+.homeButton {
+  text-decoration: none;
+  color: black;
+}
+
+.carButton {
+  color: black;
+  text-decoration: none;
+}
+
+.right {
+  text-align: end;
+}
+
+.detailsList {
+  display: grid;
+  grid-column-gap: 30px; 
+  grid-row-gap: 30px; 
+  grid-template-columns: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.gridItem {
+  margin: 5px;
+	text-align: center;
+  font-size: 1.5em;
+  width: 1000px;
+}
+
+.carImage {
+  width: 800px;
+  max-height: 600px;
+}
+
+.carName {
+  font-size: x-large;
+  width: 800px;
+}
+
+.gridItem .input {
+  width: 800px;
+}
+
+.listTitle {
+  text-align: justify;
 }
 
 @keyframes App-logo-spin {

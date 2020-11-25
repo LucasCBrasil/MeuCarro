@@ -4,6 +4,8 @@ const BASE = URL_DOMAIN + PORT.toString();
 
 export const urlGetCarros = BASE + '/';
 
+export const urlGetCarro = BASE + '/{id}';
+
 export const getRequestInit = {
     method: 'GET',
     headers: {

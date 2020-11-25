@@ -3,16 +3,17 @@ var router = express.Router();
 var carros = require('../db.json');
 
 const carsController = require('../controllers/cars');
-
 /* GET home page. */
-router.get('/', carsController.getCarros);
+router.get('/', carsController.get_carros);
+
+router.get('/:id', carsController.get_carro)
   
 router.post('/carro', function(req, res) {
   saveNovoCarro(null, req.body, res);
   res.json(carros.carros);
 })
   
-  function _saveNovoCarro(id = null, reqBody, res) {
+  function saveNovoCarro(id = null, reqBody, res) {
     const readFileAsync = promisify(fs.readFile);
     const writeFileAsync = promisify(fs.writeFile);
   
