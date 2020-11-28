@@ -22,15 +22,11 @@ function Carro(carro) {
                   <input id="price" type="text" disabled value={"Preço: R$ " + carro.carro.preco}/>
                 </div>
                   <Link to={`/${carro.carro.id}`}>
-                    <button info small title="Detalhes">
+                    <button title="Detalhes">
                       Detalhes
                     </button>
-                  </Link>
-                  <p>
-                    <input type="checkbox" defaultChecked={check} onChange={change}/>
-                    {check && <span>Adicionado aos favoritos</span> || <span>Favoritar</span>}
-                  </p>
-                  <div>
+                  </Link> 
+                  <div className="imagemDiv">
                     <img src={carro.carro.imagem} className="image"></img>
                   </div>
               </div>

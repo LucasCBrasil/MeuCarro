@@ -1,22 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function Header() {
     return (
         <div>
             <title>MeuCarro - O lugar ideal para encontrar seu próximo carro</title>
-            <div class="topnav">
+            <div className="topnav">
                 <div>
                     <button>
-                        <a href="/" class="homeButton">MeuCarro</a>
+                        <a href="/" className="homeButton">MeuCarro</a>
                     </button>
                 </div> 
             </div>
-            <div class="right">
+            <div className="right">
                 <div>
-                    <button>
-                        <a href="/carro" class="carButton">Cadastrar Carro</a>
-                    </button>
+                    <Link to={`/carro`}>
+                        <button title="Cadastrar">
+                            Cadastrar Carro
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div> 

@@ -14,3 +14,7 @@ exports.get_carro = function (req, res) {
     });
     res.json(carForId);
 }
+
+exports.get_form = function(req, res) {
+  res.json();
+}

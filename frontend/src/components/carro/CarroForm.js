@@ -34,7 +34,7 @@ function CarroForm(carro) {
                 <input type="text" id="imagemid" placeholder="https://www.carroclub.com.br/foto/hyundai-ix35-712c0e8c-1c97-4eff-be2d-4bc345caee05" required="required" name="imagem" />
                 <label for="imagem">Imagem(Link para imagem na web)</label>
                 </li>
-                <li class="button">
+                <li className="button">
                     <button type="submit">Salvar</button>
                 </li>
                 </ul>

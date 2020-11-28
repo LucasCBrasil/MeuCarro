@@ -4,10 +4,10 @@ var carros = require('../db.json');
 
 const carsController = require('../controllers/cars');
 /* GET home page. */
-router.get('/', carsController.get_carros);
+router.get('/', carsController.get_carros)
 
 router.get('/:id', carsController.get_carro)
-  
+
 router.post('/carro', function(req, res) {
   saveNovoCarro(null, req.body, res);
   res.json(carros.carros);
