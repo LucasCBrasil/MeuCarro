@@ -42,7 +42,11 @@
   display:grid; 
   grid-column-gap: 30px; 
   grid-row-gap: 30px; 
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 32% 32% 32%;
+}
+
+.carInput {
+  width: 100%;
 }
 
 .image {

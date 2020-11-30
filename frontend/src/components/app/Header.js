@@ -15,9 +15,9 @@ function Header() {
             </div>
             <div className="right">
                 <div>
-                    <Link to={`/carro`}>
-                        <button title="Cadastrar">
-                            Cadastrar Carro
+                    <Link to={`/`}>
+                        <button title="Favoritos">
+                            Meus Favoritos
                         </button>
                     </Link>
                 </div>
