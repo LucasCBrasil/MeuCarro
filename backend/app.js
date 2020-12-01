@@ -6,9 +6,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var usersRouter = require('./routes/users');
-var carsRouter = require('./routes/cars');
-var marcasRouter = require('./routes/marcas');
-var favoritesRouter = require('./routes/favoritos');
+var carsRouter = require('./routes/Carro/cars');
+var marcasRouter = require('./routes//Marcas/marcas');
+var favoritesRouter = require('./routes//Favoritos/favoritos');
 
 var app = express();
 app.options('*', cors());
