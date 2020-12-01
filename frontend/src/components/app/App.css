@@ -39,6 +39,7 @@
 }
 
 .carList {
+  margin-left: 10px;
   display:grid; 
   grid-column-gap: 30px; 
   grid-row-gap: 30px; 
@@ -80,6 +81,10 @@
 
 .imagemDiv {
   margin-top: 20px;
+}
+
+.filter {
+  margin-left: 10px;
 }
 
 .gridItem {

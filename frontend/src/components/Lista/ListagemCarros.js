@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Carro from '../carro/Carro.js';
 import { urlGetCarros, getRequestInit, urlGetMarcas } from '../../utils/request';
-import FilterProduct from '../app/Filter.js';
+import FilterProduct from '../Filter/Filter.js';
 
 function ListaCarros(){
     const [carros, setCarros] = useState([]);

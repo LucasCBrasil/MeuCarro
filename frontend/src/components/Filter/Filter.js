@@ -15,7 +15,7 @@ function FilterProduct({plural_name, singular_name, marcas, functionFilter}) {
 
     return (<>
         <form>
-            <div className="form-group">
+            <div className="filter">
                 <br />
                 <label> {text_label()} </label>
                 <select className="form-control" id="FormControlSelect" value={select} onChange={handleChange}>

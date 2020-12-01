@@ -1,0 +1,47 @@
+[
+    {
+      "id": 2,
+      "marca":"Hyundai",
+      "modelo": "ix35",
+      "ano":"2018",
+      "cor":"Branco",
+      "preco":"38899",
+      "quilometros": "20000", 
+      "imagem":"https://http2.mlstatic.com/D_NQ_NP_852001-MLB20265292666_032015-O.webp", 
+      "emplacamento":"06/06/2021", 
+      "cambio":"Automático", 
+      "vidros":"Elétricos", 
+      "tecido_bancos":"Couro", 
+      "computador_bordo":"Sim"
+    },
+    {
+      "id": 3,
+      "marca":"Toyota",
+      "modelo": "Corolla",
+      "ano":"2015",
+      "cor":"Preto",
+      "preco":"26550", 
+      "quilometros": "55200", 
+      "imagem":"https://www.automodelo.com.br/carros/5fe45f5054961a9c532e5a8c4173ce41-thumbjpg-toyota-corolla-8415305-1000-750-70.jpg", 
+      "emplacamento":"13/02/2021", 
+      "cambio":"Automático", 
+      "vidros":"Elétricos", 
+      "tecido_bancos":"Couro", 
+      "computador_bordo":"Sim"
+    },
+    {
+      "id": 5,
+      "marca":"Fiat",
+      "modelo": "Mobi",
+      "ano":"2020",
+      "cor":"Vermelho",
+      "preco":"30000",
+      "quilometros": "0", 
+      "imagem":"https://quatrorodas.abril.com.br/wp-content/uploads/2018/06/fiat-mobi-easy-2019.jpg?quality=70&strip=info", 
+      "emplacamento":"18/02/2021", 
+      "cambio":"Manual", 
+      "vidros":"Manuais", 
+      "tecido_bancos":"Malharia", 
+      "computador_bordo":"Não"
+    }
+  ]

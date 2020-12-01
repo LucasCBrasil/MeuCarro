@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function Carro(carro) {
-  const [check, setCheck] = useState(false)
-  const change = () => setCheck(!check)
 
     return (
       <div>
@@ -26,6 +24,9 @@ function Carro(carro) {
                       Detalhes
                     </button>
                   </Link> 
+                  <button title="Favoritar">
+                    Favoritar
+                  </button>
                   <div className="imagemDiv">
                     <img src={carro.carro.imagem} className="image"></img>
                   </div>

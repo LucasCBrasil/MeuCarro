@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var carros = require('../db.json');
+var carros = require('../../db.json');
 
-const carsController = require('../controllers/cars');
+const carsController = require('../../controllers/cars');
 /* GET home page. */
 router.get('/', carsController.get_carros)
 
